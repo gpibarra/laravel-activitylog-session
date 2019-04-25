@@ -1,0 +1,38 @@
+{
+    "name": "gpibarra/laravel-activitylog-session",
+    "description": "A very simple activity logger to monitor the users of your website or application",
+    "keywords":
+    [
+        "spatie",
+        "log",
+        "user",
+        "activity",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gerardo Ibarra",
+            "email": "ibarragp@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "~5.5",
+        "spatie/laravel-activitylog": "~3.5",
+        "gpibarra/laravel-tracker-session": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "gpibarra\\ActivitylogSession\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+               "gpibarra\\ActivitylogSession\\ActivitylogSessionServiceProvider"
+            ]
+        }
+    }
+}
