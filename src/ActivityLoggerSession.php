@@ -40,7 +40,7 @@ class ActivityLoggerSession extends ActivityLogger
         return $this->activity;
     }
 
-    protected function getCauserById($id) :Model
+    protected function getCauserById($id) :?Model
     {
 /*
  * Default Spatie
@@ -52,7 +52,7 @@ class ActivityLoggerSession extends ActivityLogger
         return TrackerSession::find($id);
     }
 
-    protected function getCauserDefault() :Model
+    protected function getCauserDefault() :?Model
     {
 /*
  * Default Spatie
